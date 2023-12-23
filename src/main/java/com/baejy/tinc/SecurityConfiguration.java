@@ -4,6 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
+import org.springframework.security.config.annotation.web.configurers.LogoutConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -12,7 +14,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity //Spring Security의 웹 보안 지원을 활성화하고 Spring MVC 통합을 제공
-public class WebSecurityConfig {
+public class SecurityConfiguration {
 
     // 어떤 URL 경로를 보안해야 하고 어떤 경로를 보안하지 않아야 하는지 정의
     @Bean
@@ -26,9 +28,14 @@ public class WebSecurityConfig {
                         .loginPage("/login")
                         .permitAll()
                 )
-                .logout((logout) -> logout.permitAll());
+                .logout(LogoutConfigurer::permitAll);
 
         return http.build();
+    }
+
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().requestMatchers("/css/**", "/fontawsome/**", "/images/**", "/js/**", "/favicon.ico");
     }
 
     @Bean
