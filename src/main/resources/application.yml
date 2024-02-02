@@ -4,3 +4,24 @@ spring:
     url: jdbc:mariadb://localhost:3306/tinc
     username: tinc
     password: tinc
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+
+  thymeleaf:
+    cache: false
+
+  devtools:
+    livereload:
+      enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
