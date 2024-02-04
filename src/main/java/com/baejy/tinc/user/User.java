@@ -1,5 +1,6 @@
 package com.baejy.tinc.user;
 
+import com.baejy.tinc.token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,10 +19,8 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 public class User implements UserDetails {
-
     @Id
     @GeneratedValue
-    @Column(name = "user_id")
     private Long id;
 
     private String name;
@@ -30,6 +29,9 @@ public class User implements UserDetails {
 
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @OneToMany(mappedBy = "user")
+    private List<Token> tokens;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
