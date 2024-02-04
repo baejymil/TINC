@@ -1,5 +1,6 @@
-package com.baejy.tinc.user;
+package com.baejy.tinc.user.repository;
 
+import com.baejy.tinc.user.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

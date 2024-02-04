@@ -1,6 +1,6 @@
-package com.baejy.tinc.config;
+package com.baejy.tinc.config.service;
 
-import com.baejy.tinc.token.TokenRepository;
+import com.baejy.tinc.token.repository.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

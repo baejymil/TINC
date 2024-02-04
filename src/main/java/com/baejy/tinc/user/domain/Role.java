@@ -1,4 +1,4 @@
-package com.baejy.tinc.user;
+package com.baejy.tinc.user.domain;
 
 public enum Role {
     USER,

@@ -1,4 +1,4 @@
-package com.baejy.tinc.config;
+package com.baejy.tinc.config.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

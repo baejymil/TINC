@@ -1,5 +1,9 @@
-package com.baejy.tinc.auth;
+package com.baejy.tinc.auth.controller;
 
+import com.baejy.tinc.auth.domain.AuthenticationRequest;
+import com.baejy.tinc.auth.domain.AuthenticationResponse;
+import com.baejy.tinc.auth.domain.RegisterRequest;
+import com.baejy.tinc.auth.service.AuthenticationService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

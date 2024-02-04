@@ -1,4 +1,4 @@
-package com.baejy.tinc.common;
+package com.baejy.tinc.common.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

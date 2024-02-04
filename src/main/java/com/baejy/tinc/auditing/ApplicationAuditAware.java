@@ -1,6 +1,6 @@
 package com.baejy.tinc.auditing;
 
-import com.baejy.tinc.user.User;
+import com.baejy.tinc.user.domain.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

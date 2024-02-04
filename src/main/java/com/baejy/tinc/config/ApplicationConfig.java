@@ -1,7 +1,7 @@
 package com.baejy.tinc.config;
 
 import com.baejy.tinc.auditing.ApplicationAuditAware;
-import com.baejy.tinc.user.UserRepository;
+import com.baejy.tinc.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

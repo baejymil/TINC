@@ -1,6 +1,7 @@
-package com.baejy.tinc.config;
+package com.baejy.tinc.config.filter;
 
-import com.baejy.tinc.token.TokenRepository;
+import com.baejy.tinc.config.service.JwtService;
+import com.baejy.tinc.token.repository.TokenRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

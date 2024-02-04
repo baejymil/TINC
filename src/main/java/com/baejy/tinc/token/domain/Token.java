@@ -1,6 +1,6 @@
-package com.baejy.tinc.token;
+package com.baejy.tinc.token.domain;
 
-import com.baejy.tinc.user.User;
+import com.baejy.tinc.user.domain.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

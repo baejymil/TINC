@@ -1,4 +1,4 @@
-package com.baejy.tinc.auth;
+package com.baejy.tinc.auth.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

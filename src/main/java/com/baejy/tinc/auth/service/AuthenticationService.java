@@ -1,12 +1,15 @@
-package com.baejy.tinc.auth;
+package com.baejy.tinc.auth.service;
 
-import com.baejy.tinc.config.JwtService;
-import com.baejy.tinc.token.Token;
-import com.baejy.tinc.token.TokenRepository;
-import com.baejy.tinc.token.TokenType;
-import com.baejy.tinc.user.Role;
-import com.baejy.tinc.user.User;
-import com.baejy.tinc.user.UserRepository;
+import com.baejy.tinc.auth.domain.AuthenticationRequest;
+import com.baejy.tinc.auth.domain.AuthenticationResponse;
+import com.baejy.tinc.auth.domain.RegisterRequest;
+import com.baejy.tinc.config.service.JwtService;
+import com.baejy.tinc.token.domain.Token;
+import com.baejy.tinc.token.repository.TokenRepository;
+import com.baejy.tinc.token.domain.TokenType;
+import com.baejy.tinc.user.domain.Role;
+import com.baejy.tinc.user.domain.User;
+import com.baejy.tinc.user.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

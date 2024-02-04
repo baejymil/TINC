@@ -1,5 +1,6 @@
 package com.baejy.tinc.config;
 
+import com.baejy.tinc.config.filter.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

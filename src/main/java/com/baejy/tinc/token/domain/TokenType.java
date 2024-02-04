@@ -1,4 +1,4 @@
-package com.baejy.tinc.token;
+package com.baejy.tinc.token.domain;
 
 public enum TokenType {
     BEARER

@@ -1,5 +1,6 @@
-package com.baejy.tinc.token;
+package com.baejy.tinc.token.repository;
 
+import com.baejy.tinc.token.domain.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
